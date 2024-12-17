@@ -35,7 +35,7 @@ async function writeFile(filePath, data) {
 async function writeSession(sessionId = SESSION_ID) {
  await ensureSessionDirectory();
 
- const cleanedSessionId = ("" + sessionId).replace(/Session~/gi, "").trim();
+ const cleanedSessionId = ("" + sessionId).replace(/ֆաǟɦɨʟ~/gi, "").trim();
 
  if (cleanedSessionId.length > 20) {
   const decodedSession = decodeBase64(cleanedSessionId);
